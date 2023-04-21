@@ -57,9 +57,9 @@ Okay so, now, hopefully, you will trust that those metrics are indicative of pla
 
 ## Clustering Analysis.
 
-So, we will use a very basic clustering analysis here, called K-means. I'm not going to go in the details of teh algorithm or other steps that I took to run it, but at a high level, K-means is an algorithm that finds clusters of goalkeepers with similar abilities. 
+So, we will use a very basic clustering analysis here, called K-means. I'm not going to go in the details of the algorithm or other steps that I took to run it, but at a high level, K-means is an algorithm that finds clusters of goalkeepers with similar abilities. 
 
-The goal is that one of those clusters comprises of goalkeepers with good playmaknig attributes, like Alisson and Ederson. And then, we can do a deep dive into goalkeepers into that cluster to find out who we should be targetting.
+The goal is that one of those clusters comprises of goalkeepers with good playmaknig attributes, like Alisson and Ederson. And then, we can do a deep dive into goalkeepers within that cluster to find out who we should be targetting.
 
 ### Visualizing Clusters
 
@@ -89,7 +89,7 @@ The chart above represents the average metric for each goalkeeper in a given clu
 
 There is clearly one cluster that is optimal here, Cluster 1. So, I took a look at the GKs in cluster 1 and identified realistic targets. First, I removed any unrealistic GK. As you can imagine, Ederson and Alisson were in this group, so the likes of them are not considered realistic.
 
-I put a filter on age - seeing as we should be rebuilding for the future. I only consider GKs who are 30 years old or younger. Lastly, we also want our GK to be good shot stoppers, so I used the PSxGA metric, which is essentially a number that summarizes a GK ability to stop shots. Positive numbers suggest better luck or an above average ability to stop shots. So I filetered the cluster for only positive values of that metric. Below are the identified targets:
+I put a filter on age - seeing as we should be rebuilding for the future. I only consider GKs who are 30 years old or younger. Lastly, we also want our GK to be good shot stoppers, so I used the PSxGA metric, which is essentially a number that summarizes a GK ability to stop shots. Positive numbers suggest better luck or an above average ability to stop shots. So I filetered the cluster for only positive values of that metric. Below are the identified targets, including DDG as a reference point:
 
 |    | Player        | Squad          |   Age |   Expected_/90 |   Passes_Launch% |   Passes_AvgLen |   Goal Kicks_Launch% |   Goal Kicks_AvgLen |   Crosses_Stp% |   Sweeper_#OPA |   Sweeper_AvgDist |   Passes_Att |
 |---:|:--------------|:---------------|------:|---------------:|-----------------:|----------------:|---------------------:|--------------------:|---------------:|---------------:|------------------:|-------------:|

@@ -88,5 +88,3 @@ def silhouette_coefficients(X, k_models, k_range, ss, figsize=(11, 9), savepath=
 
         plt.axvline(x=ss[k - 2], color="red", linestyle="--")
         plt.title("$k={}$".format(k), fontsize=16)
-
-    plt.savefig("{}\ss_coef_{}.png".format(savepath, label))
